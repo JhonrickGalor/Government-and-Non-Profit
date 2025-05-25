@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap JavaScript (for navbar toggle and carousel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+    <style>
+              .product-link {
+        text-decoration: none;
+        color: inherit;
+      }
+      .product-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        transition: 0.3s;
+        background-color: #fff;
+      }
+      .product-card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+      }
+      .product-card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      /* Add-to-Cart Button Style */
+      .add-to-cart-btn {
+        padding: 12px 20px;
+        background-color: #870303;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-bottom: 20px;
+      }
+      .add-to-cart-btn:hover {
+        background-color: #bc2929;
+      }
+
+      .product-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        text-align: center;
+      }
+      .product-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .product-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .product-card h3 {
+        font-size: 22px;
+        margin: 20px 0;
+        color: #0a0f24;
+      }
+      .product-card p {
+        font-size: 16px;
+        padding: 0 20px 20px;
+        color: #555;
+      }
+      .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+      }
+      .cta-section {
+        text-align: center;
+        margin-top: 40px;
+      }
+      .cta-btn {
+        padding: 12px 30px;
+        background-color: #32a852;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: 0.3s ease;
+        display: inline-block;
+        margin-top: 20px;
+      }
+      .cta-btn:hover {
+        background-color: #288e44;
+      }
+    </style>
+        <script src="cart.js" defer></script>
+  </head>
+  <main>
+    <!-- Burger Ka Sakin -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">GNP</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+<li class="nav-item dropdown" id="userNavItem" style="display: none;">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="userDropdown"></a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#" onclick="logout()">Log Out</a></li>
+  </ul>
+</li>
+<li class="nav-item" id="loginNavItem">
+  <a class="nav-link" href="login.html">Log In</a>
+</li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About Us</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="Donate.html">Donate</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart </a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<br><br>
+<center>
+<div class="containerss my-5">
+  <div class="bg-light p-4 p-md-5 rounded shadow-sm">
+    <h1 class="text-center mb-4">Welcome to Donation Page</h1>
+    <p class="text-justify">
+      GNP is a group of people who are working earnestly to provide services to those in need. 
+      GNP also supports the local market and its products. As GNP supports them, the funds and 
+      monetary needs are sourced through these efforts.
+    </p>
+    <p class="text-justify">
+      People can buy these works of art, where 50% of the profit will go to the programs and 
+      services that GNP provides, while the remaining 50% goes directly to the artist.
+    </p>
+    <p class="text-center fw-bold mt-4">
+      We are very much delighted to be supported by you and our local artists.<br />
+      Thank you very much!
+    </p>
+  </div>
+</div>
+
+      <div class="containerss">
+        <h2 style="color: #870303;; font-weight: bold">Filipino Local and Traditional Arts</h2>
+        <br><br> 
+        <div class="product-list">
+          <!-- T'nalak Weaving -->
+<!-- T'nalak Weaving -->
+<div class="product-card">
+    <img src="tnalak.jpg" alt="T'nalak Weaving" />
+    <h3>T'nalak Weaving</h3>
+    <p style="color: #870303; font-weight: bold">₱2,450.00</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTnalak">View More</button>
+  </div>
+  <div class="modal fade" id="modalTnalak" tabindex="-1" aria-labelledby="modalTnalakLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">T'nalak Weaving</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="tnalak.jpg" alt="T'nalak Weaving" class="img-fluid mb-3" />
+          <p><strong>Price:</strong> ₱2,450.00</p>
+          <p><strong>Origin:</strong> South Cotabato, Philippines</p>
+          <p><strong>Materials:</strong> Abaca fiber (Manila hemp)</p>
+          <p>Traditional cloth woven by the T'boli women, known as the “Dreamweavers.” The designs are inspired by their dreams and culture.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-success add-to-cart-btn" data-name="T'nalak Weaving" data-price="2450.00" data-image="tnalak.jpg">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Piña Fabric -->
+  <div class="product-card">
+    <img src="pina.jpg" alt="Piña Fabric" />
+    <h3>Piña Fabric</h3>
+    <p style="color: #870303; font-weight: bold">₱480.00</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPina">View More</button>
+  </div>
+  <div class="modal fade" id="modalPina" tabindex="-1" aria-labelledby="modalPinaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Piña Fabric</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="pina.jpg" alt="Piña Fabric" class="img-fluid mb-3" />
+          <p><strong>Price:</strong> ₱480.00</p>
+          <p><strong>Origin:</strong> Aklan, Philippines</p>
+          <p><strong>Materials:</strong> Pineapple leaf fiber</p>
+          <p>A delicate, translucent textile used in formal garments like Barong Tagalog and terno. Known for its durability and sheen.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-success add-to-cart-btn" data-name="Piña Fabric" data-price="480.00" data-image="pina.jpg">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Buntal Hat -->
+  <div class="product-card">
+    <img src="Buntal.JPG" alt="Buntal Hat" />
+    <h3>Buntal Hat</h3>
+    <p style="color: #870303; font-weight: bold">₱550.00</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBuntal">View More</button>
+  </div>
+  <div class="modal fade" id="modalBuntal" tabindex="-1" aria-labelledby="modalBuntalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Buntal Hat</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Buntal.JPG" alt="Buntal Hat" class="img-fluid mb-3" />
+          <p><strong>Price:</strong> ₱550.00</p>
+          <p><strong>Origin:</strong> Baliuag, Bulacan</p>
+          <p><strong>Materials:</strong> Buri palm fiber (Buntal)</p>
+          <p>A wide-brimmed handwoven hat prized for its lightness and elegance. Commonly worn for both fashion and sun protection.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-success add-to-cart-btn" data-name="Buntal Hat" data-price="550.00" data-image="Buntal.JPG">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Banig -->
+  <div class="product-card">
+    <img src="Banig.JPG" alt="Banig (Handwoven Mat)" />
+    <h3>Banig (Handwoven Mat)</h3>
+    <p style="color: #870303; font-weight: bold">₱900.00</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBanig">View More</button>
+  </div>
+  <div class="modal fade" id="modalBanig" tabindex="-1" aria-labelledby="modalBanigLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Banig (Handwoven Mat)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Banig.JPG" alt="Banig" class="img-fluid mb-3" />
+          <p><strong>Price:</strong> ₱900.00</p>
+          <p><strong>Origin:</strong> Basey, Samar</p>
+          <p><strong>Materials:</strong> Tikog grass, pandan leaves</p>
+          <p>Colorful sleeping or decorative mats handwoven into intricate patterns and often used during fiestas or gatherings.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-success add-to-cart-btn" data-name="Banig (Handwoven Mat)" data-price="900.00" data-image="Banig.JPG">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Pamaypay -->
+  <div class="product-card">
+    <img src="Pamaypay.JPG" alt="Pamaypay (Hand Fan)" />
+    <h3>Pamaypay (Hand Fan)</h3>
+    <p style="color: #870303; font-weight: bold">₱150.00</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPamaypay">View More</button>
+  </div>
+  <div class="modal fade" id="modalPamaypay" tabindex="-1" aria-labelledby="modalPamaypayLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Pamaypay (Hand Fan)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Pamaypay.JPG" alt="Pamaypay" class="img-fluid mb-3" />
+          <p><strong>Price:</strong> ₱150.00</p>
+          <p><strong>Origin:</strong> Laguna, Philippines</p>
+          <p><strong>Materials:</strong> Bamboo ribs, woven buri or pandan leaves</p>
+          <p>Traditional Filipino hand fan used for personal cooling and cultural performances.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-success add-to-cart-btn" data-name="Pamaypay (Hand Fan)" data-price="150.00" data-image="Pamaypay.JPG">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Kiping -->
+  <div class="product-card">
+    <img src="kiping.jpg" alt="Kiping" />
+    <h3>Kiping</h3>
+    <p style="color: #870303; font-weight: bold">₱100.00</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKiping">View More</button>
+  </div>
+  <div class="modal fade" id="modalKiping" tabindex="-1" aria-labelledby="modalKipingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Kiping</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="kiping.jpg" alt="Kiping" class="img-fluid mb-3" />
+          <p><strong>Price:</strong> ₱100.00</p>
+          <p><strong>Origin:</strong> Lucban, Quezon</p>
+          <p><strong>Materials:</strong> Ground rice, food coloring</p>
+          <p>Colorful, leaf-shaped rice wafers used as edible decorations during the Pahiyas Festival. Can be grilled or fried.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-success add-to-cart-btn" data-name="Kiping" data-price="100.00" data-image="kiping.JPG">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bayong -->
+  <div class="product-card">
+    <img src="bayong.jpg" alt="Bayong (Handwoven Bag)" />
+    <h3>Bayong (Handwoven Bag)</h3>
+    <p style="color: #870303; font-weight: bold">₱800.00</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBayong">View More</button>
+  </div>
+  <div class="modal fade" id="modalBayong" tabindex="-1" aria-labelledby="modalBayongLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Bayong (Handwoven Bag)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <img src="bayong.jpg" alt="Bayong" class="img-fluid mb-3" />
+          <p><strong>Price:</strong> ₱800.00</p>
+          <p><strong>Origin:</strong> Luzon, Philippines</p>
+          <p><strong>Materials:</strong> Buri leaves, pandan leaves, plastic strips</p>
+          <p>Eco-friendly traditional Filipino shopping bag known for its strength, reuse, and vibrant design.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button class="btn btn-success add-to-cart-btn" data-name="Bayong (Handwoven Bag)" data-price="800.00" data-image="bayong.JPG">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>  
+</center>    
+
+
+    <div class="footer">
+        <p>&copy; 2025 GNP. All Rights Reserved.</p>
+      </div>
+    </body>
+
+<script>
+  function logout() {
+    localStorage.removeItem("loggedInUser");
+    location.reload(); // Reload to reflect logout state
+  }
+
+  // Update navbar on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    const user = localStorage.getItem("loggedInUser");
+    const userNavItem = document.getElementById("userNavItem");
+    const loginNavItem = document.getElementById("loginNavItem");
+    const userDropdown = document.getElementById("userDropdown");
+
+    if (user) {
+      loginNavItem.style.display = "none";
+      userNavItem.style.display = "block";
+      userDropdown.textContent = user;
+    } else {
+      loginNavItem.style.display = "block";
+      userNavItem.style.display = "none";
+    }
+  });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>

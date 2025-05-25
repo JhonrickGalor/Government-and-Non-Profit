@@ -1,0 +1,206 @@
+/* Navbar styles */
+
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+    background-color: #870303;
+}
+
+
+body {
+  background-color: #d3d3d3;
+}
+
+
+.nav-item {
+  color: #870303;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Carousel images */
+.carousel img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Card styles */
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-title {
+  color: #870303;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+h2 {
+  color: rgb(135, 3, 3);
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  color: rgb(135, 3, 3);
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.containers {
+  max-width: 800px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+  margin-left: 350px;
+}
+
+.containerss {
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+}
+.footer {
+  background: #870303;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 215px;
+}
+.btn {
+  color: #1e3a5f; 
+}
+.sectionss {
+  text-align: center;
+  align-items: center;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgb(135, 3, 3);
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #870303;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #b53f3f;
+}
+
+.Sign {
+  width: 10%;
+  padding: 10px;
+  background-color: #870303;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Sign:hover {
+  background-color: #870303;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.menu-button {
+  display: block;
+}
+
+.signup-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.logins {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  align-items: center;
+}
+
+.modal:hover {
+  display: none;
+}
+
+
+.dropdown-item {
+  color: white;
+  background-color: #870303;
+}
+
+.dropdown-item:hover {
+  background-color: #b53f3f;
+}
+
+.nav-item:hover {
+  background-color: #b53f3f;
+}
+
+.nav-item {
+  color: rgb(252, 252, 252);
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-link {
+  color: rgb(244, 244, 244);
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GNP</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap JavaScript (for navbar toggle and carousel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Burger Ka Sakin -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">GNP</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+<li class="nav-item dropdown" id="userNavItem" style="display: none;">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="userDropdown"></a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#" onclick="logout()">Log Out</a></li>
+  </ul>
+</li>
+<li class="nav-item" id="loginNavItem">
+  <a class="nav-link" href="login.html">Log In</a>
+</li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About Us</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="Donate.html">Donate</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">🛒 Cart </a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="School supplies donation in Ramos, Tarlac.jpg"
+            class="d-block w-100"
+            alt="Food Image 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="SMFI mounts medical missions in MOA, Quezon City.jpg"
+            class="d-block w-100"
+            alt="Food Image 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="download (2).jpg"
+            class="d-block w-100"
+            alt="Food Image 3"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Butuan City Host Lions Club (Philippines).jpg"
+            class="d-block w-100"
+            alt="Food Image 4"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="BDO Foundation aids communities hit by Typhoon Neneng, earthquake.jpg"
+            class="d-block w-100"
+            alt="Food Image 5"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#recipeCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#recipeCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <br />
+<!-- Place this in the body of your HTML -->
+ <center>
+<div class="containerss py-5">
+  <div class="bg-light p-4 p-md-5 mb-5 rounded shadow-sm">
+    <h1 class="text-center mb-4">Welcome to GNP</h1>
+    <p>
+      Established in 2002, GNP was formed to serve as a bridge between government initiatives and community needs.
+      Rooted in the belief that effective governance and empowered citizens can build a better society, we began our
+      journey as a grassroots effort to bring meaningful support to underserved communities. Over time, our scope
+      expanded, partnerships grew, and our impact deepened—transforming us into a trusted advocate for social
+      development, transparency, and inclusive progress.
+    </p>
+  </div>
+
+  <div class="bg-white p-4 p-md-5 mb-5 rounded shadow-sm">
+    <h2 class="text-center mb-3">Our Mission</h2>
+    <p>
+      At GNP, we are committed to serving the community through transparent governance, impactful initiatives, and
+      accessible resources. Our mission is to empower individuals, drive positive social change, and ensure a better
+      quality of life for all. Whether you’re looking for public services, community programs, or ways to get involved,
+      our platform provides the information and support you need. Together, we can build a future based on
+      accountability, inclusivity, and sustainable development.
+    </p>
+  </div>
+
+  <div class="bg-light p-4 p-md-5 mb-5 rounded shadow-sm">
+    <h2 class="text-center mb-3">Our Vision</h2>
+    <p class="text-center">
+      A progressive and well-informed society where every individual has the opportunity, support, and resources to
+      thrive—fostering a future built on accountability, equality, and sustainable development.
+    </p>
+  </div>
+
+  <div class="bg-white p-4 p-md-5 mb-5 rounded shadow-sm">
+    <h2 class="text-center mb-4">Our Core Values</h2>
+    <ul class="list-unstyled">
+      <li class="mb-2"><strong>Service:</strong> We exist to serve the public and uphold the common good.</li>
+      <li class="mb-2"><strong>Integrity:</strong> We operate with honesty, accountability, and transparency in all our work.</li>
+      <li class="mb-2"><strong>Collaboration:</strong> We build strong partnerships with government agencies, communities, and other organizations.</li>
+      <li class="mb-2"><strong>Empowerment:</strong> We uplift individuals and communities through knowledge, tools, and resources.</li>
+      <li class="mb-2"><strong>Equity:</strong> We advocate for fairness, inclusivity, and equal opportunities for all.</li>
+      <li><strong>Resilience:</strong> We adapt and innovate in the face of challenges to deliver lasting impact.</li>
+    </ul>
+  </div>
+
+  <div class="bg-light p-4 p-md-5 rounded shadow-sm">
+    <h2 class="text-center mb-3">Our Philosophy</h2>
+    <p>
+      We believe that effective governance is only possible when the voices of the people are heard, respected, and
+      integrated into every step of the process. Our work is grounded in the principle that change is best achieved
+      through cooperation, transparency, and the empowerment of local communities. By aligning our efforts with both
+      public policies and grassroots needs, we aim to create lasting solutions that uplift lives and strengthen our
+      nation.
+    </p>
+  </div>
+</div>
+</center>
+    <br /><br />
+    <h2>CHECK OUT SOME OF OUR SERVICES</h2>
+    <!-- Cards -->
+    <div class="container my-5">
+      <div class="row">
+        <!-- Card 1: Scholarship Program -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="Glyphs Silhouette Vector PNG, Student Glyph Black Icon, Student Icons, Black Icons, Student PNG Image For Free Download.jpg"
+              class="card-img-top"
+              alt="Scholarship Program"
+            />
+            <div class="card-body">
+              <h5 class="card-title">SCHOLARSHIP PROGRAM</h5>
+              <p class="card-text">
+                Provides financial assistance to students, helping them cover
+                tuition fees, school supplies, and other educational expenses to
+                ensure they complete their studies.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modalScholarship"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Modal 1 -->
+        <div class="modal fade" id="modalScholarship" data-bs-backdrop="static" tabindex="-1" aria-labelledby="modalScholarshipLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalScholarshipLabel">SCHOLARSHIP PROGRAM</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                This program ensures that financially challenged students can continue their education by covering fees, supplies, and more.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 2: Health and Sanitary -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="Medicine reminder app icon.jpg"
+              class="card-img-top"
+              alt="Health and Sanitary"
+            />
+            <div class="card-body">
+              <h5 class="card-title">HEALTH AND SANITARY</h5>
+              <p class="card-text">
+                Supplies essential healthcare services, medicines, and hygiene
+                products to improve overall well-being and prevent diseases in
+                the community.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modalHealth"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Modal 2 -->
+        <div class="modal fade" id="modalHealth" data-bs-backdrop="static" tabindex="-1" aria-labelledby="modalHealthLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalHealthLabel">HEALTH AND SANITARY</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                This initiative provides medical support, access to hygiene kits, and regular health check-ups for the community.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 3: Pangkabuhayan Assistance -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="Stocks graphic for business stats free vector icons designed by Freepik.jpg"
+              class="card-img-top"
+              alt="Pangkabuhayan Assistance"
+            />
+            <div class="card-body">
+              <h5 class="card-title">PANGKABUHAYAN ASSISTANCE</h5>
+              <p class="card-text">
+                Offers financial or material support to individuals or families
+                to start or sustain small businesses, promoting economic
+                stability and self-sufficiency.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#modalLivelihood"
+              >
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Modal 3 -->
+        <div class="modal fade" id="modalLivelihood" data-bs-backdrop="static" tabindex="-1" aria-labelledby="modalLivelihoodLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLivelihoodLabel">PANGKABUHAYAN ASSISTANCE</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                This assistance helps families start or expand livelihood projects through funding, tools, and business training.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <h2>VIEW OUR ADVOCACIES</h2>
+    <!-- Cards -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="Are Nursing Homes Actually Good for Elderly People_.jpg"
+              class="card-img-top"
+              alt="Dish 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Promote Elderly Care</h5>
+              <p class="card-text">
+                Promotes the well-being, dignity, and quality of life of senior
+                citizens by ensuring access to healthcare, social support, and
+                proper living conditions.
+              </p>
+              <br />
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalElderly">
+                View More
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modalElderly" data-bs-backdrop="static" tabindex="-1" aria-labelledby="modalElderlyLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalElderlyLabel">Promote Elderly Care</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Full details about promoting elderly care can be displayed here.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="image.png" class="card-img-top" alt="Dish 2" />
+            <div class="card-body">
+              <h5 class="card-title">End Polio Campaign</h5>
+              <p class="card-text">
+                A global initiative led by organizations like WHO and Rotary
+                International to eradicate polio through vaccination, awareness,
+                and medical interventions. flavor.
+              </p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPolio">
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modalPolio" data-bs-backdrop="static" tabindex="-1" aria-labelledby="modalPolioLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalPolioLabel">End Polio Campaign</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Full details about the global efforts to end polio can be shown here.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="HIV _ AIDS - Disability Awareness Sticker.jpg"
+              class="card-img-top"
+              alt="Dish 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">HIV/AIDS Awareness</h5>
+              <p class="card-text">
+                Aims to educate people on prevention, treatment, and reducing
+                stigma around HIV/AIDS, ensuring those affected receive proper
+                medical care and support.
+              </p>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalHIV">
+                View More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modalHIV" data-bs-backdrop="static" tabindex="-1" aria-labelledby="modalHIVLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalHIVLabel">HIV/AIDS Awareness</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Detailed information about HIV/AIDS awareness campaigns, services, and education can be shown here.
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+
+    <div class="footer">
+      <p>&copy; 2025 GNP. All Rights Reserved.</p>
+    </div>
+
+<script>
+  function logout() {
+    localStorage.removeItem("loggedInUser");
+    location.reload(); // Reload to reflect logout state
+  }
+
+  // Update navbar on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    const user = localStorage.getItem("loggedInUser");
+    const userNavItem = document.getElementById("userNavItem");
+    const loginNavItem = document.getElementById("loginNavItem");
+    const userDropdown = document.getElementById("userDropdown");
+
+    if (user) {
+      loginNavItem.style.display = "none";
+      userNavItem.style.display = "block";
+      userDropdown.textContent = user;
+    } else {
+      loginNavItem.style.display = "block";
+      userNavItem.style.display = "none";
+    }
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
